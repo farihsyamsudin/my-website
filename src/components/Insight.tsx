@@ -1,12 +1,8 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Insight({ data }: { data: any[] }) {
   const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
 
   const insights = data.length > 0 ? data : [
     { id: 1, title: "No insights yet", content: "Check back later for updates.", date: new Date().toISOString() }

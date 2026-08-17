@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Globe, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
